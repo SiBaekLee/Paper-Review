@@ -3,7 +3,7 @@
 > **SIGGRAPH Conference Papers 2025**  
 > Mia Tang, Yael Vinker, Chuan Yan, Lvmin Zhang, Maneesh Agrawala (Stanford / MIT CSAIL)
 
-🔗 [논문 홈페이지](https://inklayer.github.io) · [arXiv](https://doi.org/10.1145/3721238.3730606) · [📄 발표 슬라이드](./Yael%20Vinker.2025.SIGGRAPH.InkLayer%20presented%20by%20%EC%9C%A0%EC%A7%84%ED%98%84.pdf)
+🔗 [논문 홈페이지](https://inklayer.github.io) · [arXiv](https://doi.org/10.1145/3721238.3730606) · [📄 발표 슬라이드](./Yael%20Vinker.2025.SIGGRAPH.InkLayer%20presented%20by%20%EC%9C%A0%EC%A7%84%ED%98%84.pdf) · [🧪 LLM 비교 실험](./llm-comparison.md)
 
 ---
 
@@ -59,6 +59,14 @@ sorted layer 분해 + inpainting
 **한계**
 - 복잡한 장면에서 depth 추정이 부정확하면 레이어 순서 오류 발생 가능
 - 파인튜닝에 일부 레이블 데이터 필요 (완전 제로샷 아님)
+
+---
+
+## 추가 실험 — 범용 LLM과의 비교
+
+논문 재현에 더해, 동일한 인스턴스 분할 과제를 ChatGPT·Gemini에 시켜 InkLayer와 직접 비교한 실험을 진행함. 전체 정리는 [llm-comparison.md](./llm-comparison.md) 참고.
+
+[![InkLayer vs ChatGPT comparison](./inklayer_vs_chatgpt_comparison.png)](./llm-comparison.md)
 
 ---
 
